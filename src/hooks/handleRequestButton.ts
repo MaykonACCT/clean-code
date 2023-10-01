@@ -5,8 +5,11 @@ export function handleRequestButton(
     setUser: Dispatch<SetStateAction<UserProps>>,
 ): void {
     fetch(`https://api.github.com/users/${username}`)
-    .then((response) => response.json())
-    .then((data) => {
+    ?.then((response) => response.json())
+    ?.then((data) => {
         setUser(data)
+    })
+    .catch((error) => {
+        throw new Error(error)
     })
 }

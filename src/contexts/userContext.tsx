@@ -4,7 +4,7 @@ import { useState, useContext, createContext } from 'react'
 const User = createContext<User>({} as User)
 
 export const UserProvider: FC<PropsWithChildren<{}>> = ({ children }) => {
-    const [getUser, setUser] = useState<UserProps>()
+    const [getUser, setUser] = useState<UserProps>({})
 
     return (
         <User.Provider value={{ getUser, setUser }}>
