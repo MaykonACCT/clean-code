@@ -1,0 +1,10 @@
+.userContainer {
+    max-width: 100%;
+    white-space: pre-wrap;
+    margin-top: 20px;
+}
+
+.userContainer a {
+    color: #ffffff;
+    text-decoration: none;
+}

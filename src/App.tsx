@@ -1,4 +1,4 @@
-import {Icon} from './Icon'
+import {Icon} from './components/Icon/Icon'
 import './App.css';
 import { UserProvider } from './contexts/userContext';
 
