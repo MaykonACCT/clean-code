@@ -22,7 +22,7 @@ function UserCard() {
                 {bio ? <p>Bio: {bio}</p> : null}
                 {company ? <p>Company: {company}</p> : null}
                 {email ? <p>Email: {email}</p> : null}
-                <a href={`https://github.com/${login}`} target="_blank" rel="noreferrer"><b>Repositorios</b></a>
+                {login ? <a href={`https://github.com/${login}`} target="_blank" rel="noreferrer"><b>Repositorios</b></a> : null}
             </div>
         </section>
     )
